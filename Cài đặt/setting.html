@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <div class="logo">
+                <img src="logo.jpg" alt="">
+            </div>
+            <ul class="menu">
+                <li class="active">
+                    <a href="#" >
+                        <i class='bx bx-home' ></i>
+                        <span>Trang chủ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-male-female'></i>
+                        <span>Nhân viên</span>
+                    </a>
+                </li> 
+                <li>
+                    <a href="#">
+                        <i class='bx bx-book' ></i>
+                        <span>Sách</span>
+                    </a>
+                </li> 
+                <li>
+                    <a href="#">
+                        <i class='bx bx-user' ></i>
+                        <span>Khách hàng</span>
+                    </a>
+                </li> 
+                <li>
+                    <a href="#">
+                        <i class='bx bx-calculator'></i>
+                        <span>Đơn hàng</span>
+                    </a>
+                </li> 
+                <li>
+                    <a href="#">
+                        <i class='bx bx-package'></i>
+                        <span>Nhập hàng</span>
+                    </a>
+                </li> 
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-book-content' ></i>
+                        <span>Doanh thu</span>
+                    </a>
+                </li> 
+                <li>
+                    <a href="#">
+                        <i class='bx bx-calendar' ></i>
+                        <span>Lịch </span>
+                    </a>
+                </li> 
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-cog'></i>
+                        <span>Cài đặt</span>
+                    </a>
+                </li> 
+                <li class="logout">
+                    <a href="#">
+                        <i class='bx bxs-log-in-circle'></i>
+                        <span>Đăng xuất</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="main">
+            <div class="topbar">
+                <div class="setting">
+                    <h2>Cài đặt</h2>
+                </div>
+    
+                <div class="infor">
+                    <div class="thongbao">
+                        <ion-icon name="notifications-circle-outline"></ion-icon>
+                        <span class="num">8</span>
+                    </div>
+        
+                    <div class="user">
+                        
+                        <img src="ava.jpg" alt="">
+                    </div>
+        
+                </div>     
+            </div>
+    
+            <div class="search">
+                <input type="text" placeholder="  Tìm kiếm" class="search-input">
+                <ion-icon name="search-outline"></ion-icon>
+            </div>
+
+            <!-- MAIN CONTENT -->
+            <div class="setting">
+                <div class="setting-content">
+                    <img src="ava.jpg" alt="avatar">
+                    <div class="content-staffinf">
+                        <div class="staffinfor">
+                            <label for="staffnumber">Mã nhân viên: </label>
+                            <div class="staffnumber">Azhn04</div>
+                        </div>
+                        <div class="staffinfor">
+                            <label for="staffname">Họ và tên: </label>
+                            <div class="staffname">Gia Bảo Anh</div>
+                        </div>
+                        <div class="staffinfor">
+                            <label for="staffgender">Giới tính: </label>
+                            <div class="staffgender">Nữ</div>
+                        </div>
+                        <div class="staffinfor">
+                            <label for="staffdof">Ngày sinh: </label>
+                            <div class="staffdof">30/03/2004</div>
+                        </div>
+                        <div class="staffinfor">
+                            <label for="staffphonenb">Số điện thoại: </label>
+                            <div class="staffphonenb">0345291033</div>
+                        </div>
+                        <div class="staffinfor">
+                            <label for="staffaddress">Địa chỉ: </label>
+                            <div class="staffaddress">769, xóm 2, khu phố Tân Thành, Thị Trấn Lạc Tánh, huyện Tánh Linh, tỉnh Bình Thuận</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+     <!-- ORDER -->
+    
+        <div class="order">
+            <div class="order-pending stock">
+                <h2>Hóa đơn nhập hàng chờ xác nhận</h2>
+                <div class="order-pending-stock-content">
+                   <div class="item">
+                    <div class="stock-confirm">
+                        <div class="stocknumber">DH001</div>
+                        <button class="btn-conf">Xác nhận</button>
+                    </div>
+                    <div class="stock-detail">
+                        <div class="stock-detail-day">
+                            <lable>Ngày tạo: </lable>
+                            <div class="stock-detail-daycreate">13/07/2004</div>
+                        </div>
+                        <div class="stock-detail-status">
+                            <lable>Trạng thái: </lable>
+                            <div class="stock-detail-statusnow">Chờ xác nhận</div>
+                        </div>
+                        <div class="stock-detail-staff">
+                            <lable>Nhân viên tạo: </lable>
+                            <div class="stock-detail-staffcreate">NV001</div>
+                        </div>
+                    </div>
+                    <div class="item_icon">
+                        <ion-icon  name="arrow-forward-outline"></ion-icon>
+                    </div>
+                    </div>
+                    <div class="item">
+                        <div class="stock-confirm">
+                            <div class="stocknumber">DH001</div>
+                            <button class="btn-conf">Xác nhận</button>
+                        </div>
+                        <div class="stock-detail">
+                            <div class="stock-detail-day">
+                                <lable>Ngày tạo: </lable>
+                                <div class="stock-detail-daycreate">13/07/2004</div>
+                            </div>
+                            <div class="stock-detail-status">
+                                <lable>Trạng thái: </lable>
+                                <div class="stock-detail-statusnow">Chờ xác nhận</div>
+                            </div>
+                            <div class="stock-detail-staff">
+                                <lable>Nhân viên tạo: </lable>
+                                <div class="stock-detail-staffcreate">NV001</div>
+                            </div>
+                        </div>
+                        <div class="item_icon">
+                            <ion-icon  name="arrow-forward-outline"></ion-icon>
+                        </div>
+                    </div>
+                        <div class="item">
+                            <div class="stock-confirm">
+                                <div class="stocknumber">DH001</div>
+                                <button class="btn-conf">Xác nhận</button>
+                            </div>
+                            <div class="stock-detail">
+                                <div class="stock-detail-day">
+                                    <lable>Ngày tạo: </lable>
+                                    <div class="stock-detail-daycreate">13/07/2004</div>
+                                </div>
+                                <div class="stock-detail-status">
+                                    <lable>Trạng thái: </lable>
+                                    <div class="stock-detail-statusnow">Chờ xác nhận</div>
+                                </div>
+                                <div class="stock-detail-staff">
+                                    <lable>Nhân viên tạo: </lable>
+                                    <div class="stock-detail-staffcreate">NV001</div>
+                                </div>
+                            </div>
+                            <div class="item_icon">
+                                <ion-icon  name="arrow-forward-outline"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="order-pendind customer">
+                <h2>Đơn mua hàng chờ xác nhận</h2>
+                <div class="order-pending-customer-content">
+                    <div class="item">
+                        <div class="stock-confirm">
+                            <div class="stocknumber">HD001</div>
+                            <button class="btn-conf">Xác nhận</button>
+                        </div>
+                        <div class="stock-detail">
+                            <div class="stock-detail-day">
+                                <lable>Ngày tạo: </lable>
+                                <div class="stock-detail-daycreate">13/07/2004</div>
+                            </div>
+                            <div class="stock-detail-status">
+                                <lable>Trạng thái: </lable>
+                                <div class="stock-detail-statusnow">Chờ xác nhận</div>
+                            </div>
+                            <div class="stock-detail-staff">
+                                <lable>Nhân viên tạo: </lable>
+                                <div class="stock-detail-staffcreate">NV001</div>
+                            </div>
+                        </div>
+                        <div class="item_icon">
+                            <ion-icon  name="arrow-forward-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="stock-confirm">
+                            <div class="stocknumber">HD001</div>
+                            <button class="btn-conf">Xác nhận</button>
+                        </div>
+                        <div class="stock-detail">
+                            <div class="stock-detail-day">
+                                <lable>Ngày tạo: </lable>
+                                <div class="stock-detail-daycreate">13/07/2004</div>
+                            </div>
+                            <div class="stock-detail-status">
+                                <lable>Trạng thái: </lable>
+                                <div class="stock-detail-statusnow">Chờ xác nhận</div>
+                            </div>
+                            <div class="stock-detail-staff">
+                                <lable>Nhân viên tạo: </lable>
+                                <div class="stock-detail-staffcreate">NV001</div>
+                            </div>
+                        </div>
+                        <div class="item_icon">
+                            <ion-icon  name="arrow-forward-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="stock-confirm">
+                            <div class="stocknumber">HD001</div>
+                            <button class="btn-conf">Xác nhận</button>
+                        </div>
+                        <div class="stock-detail">
+                            <div class="stock-detail-day">
+                                <lable>Ngày tạo: </lable>
+                                <div class="stock-detail-daycreate">13/07/2004</div>
+                            </div>
+                            <div class="stock-detail-status">
+                                <lable>Trạng thái: </lable>
+                                <div class="stock-detail-statusnow">Chờ xác nhận</div>
+                            </div>
+                            <div class="stock-detail-staff">
+                                <lable>Nhân viên tạo: </lable>
+                                <div class="stock-detail-staffcreate">NV001</div>
+                            </div>
+                        </div>
+                        <div class="item_icon">
+                            <ion-icon  name="arrow-forward-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+</body>
+</html>
