@@ -239,6 +239,7 @@ ion-icon[name="notifications-circle-outline"] {
     display: flex;
     position: relative;
     flex-basis: 75%;
+
 }
 
 .right_maincontent{
@@ -251,8 +252,443 @@ ion-icon[name="notifications-circle-outline"] {
 
 /* Css cho maincontent */
 
+.maincontent_left{
+    display: flex;
+    position: relative;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    flex-basis: 30%;
+}
 
 
+.maincontent_right{
+    position: relative;
+    border: 1px solid #513820;
+    border-radius: 10px;
+    flex-basis: 70%; 
+    flex-direction: column;
+    display: flex;
+    width: 70%;
+    height: 100%;
+}
+
+/* Css cho maincontent_left (Thanh tim kiem va list tro chuyen)*/
+
+.list-chat-search{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    height: 8%;
+    background: #513820;
+    margin-bottom: 2%;
+
+}
+
+.list-chat{
+  
+    border: 1px solid #513820;
+    border-radius: 10px;
+    position: relative;
+    height: 92%;
+    overflow: hidden;
+
+}
+
+/* Css cho thanh tim kiem */
+
+.search-input{
+  
+    text-align: left;
+    border-radius: 10px;
+    border: 1px solid #513820;
+    height: 100%;
+    width: 100%;
+ 
+ }
+
+ion-icon[name="search-outline"] {
+    position: absolute;
+    left: 85%;
+    font-size: 1.5rem;
+  
+}
+
+/* Css cho list tro chuyen */
+
+
+.list-chat-history{
+    list-style: none;
+    height: 100%;
+    width: 106%;
+    position: relative;
+    overflow-y: scroll;
+    
+
+}
+
+.contacts {
+    border-radius: 15px;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 0.3rem;
+
+}
+
+.contacts_item{
+    display: flex;
+    border: 0px solid #513820;
+    border-radius: 15px;
+    height: 15%;
+    width: 100%;
+    position: relative;
+    grid-gap: 0.5rem;
+    align-items: center;
+}
+
+.contacts_item .userava{
+    flex-basis: 15%;
+    background: #513820;
+    position: relative;
+    left: 0;
+    display: flex;
+    align-items: center;
+    margin: 0.7rem;
+}
+
+.numbermess{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 2rem;
+    flex-basis: 20%;
+    padding: 0 3%;
+}
+
+
+.contacts_item_content{
+    display: flex;
+    flex-direction: column;
+    font-weight: 100;
+    overflow:hidden;
+    flex-basis: 55%;
+    font-size: 0.8rem;
+
+}
+
+.contacts_item_content .user_inf{
+    font-weight: 800;
+}
+
+
+
+
+.numbermessnow{
+    position: absolute;
+    right: 1.5rem;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 0px solid #F7F7F7;
+    background: #513820;
+    color: #F7F7F7;
+    font-weight: 100;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+    left: 40%;
+  
+}
+
+.numbermess span{
+    font-size: 0.7rem;
+    margin-top: 1.7rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.list-chat-history li:hover, 
+.active{
+    background:  #a09c98;
+    border-radius: 15px;
+}
+
+.unread{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+
+/* Css cho maincontent_right (chatbox) */
+
+
+.chatbox-header {
+	position: relative;
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+    height: 10%;
+    grid-gap: 1rem;
+    border-radius: 0px;
+    border-bottom: 1px solid #513820;
+}
+
+
+.chatbox-body {
+	position: relative;
+    display: flex;
+    padding: 1rem 1rem 0;
+    width: 100%;
+    height: 80%;
+    grid-gap: 1rem;
+    top: 1%;
+    flex-direction: column;
+    border-radius: 0px;
+    overflow: hidden;
+
+
+}
+
+
+.chatbox-footer {
+	position: relative;
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+    height: 10%;
+    grid-gap: 1rem;
+}
+
+
+/* Css cho chatbox_header */
+
+.chatbox-header .userava{
+    left: 0;
+}
+
+.chatbox-userinf{
+    display: flex;
+    flex-direction: column;
+    font-weight: 200;
+   
+}
+
+.chatbox-userinf .user_inf{
+    font-weight: 800;
+}
+
+
+#action_menu_btn {
+	position: absolute;
+	right: 5%;
+	top: 0.5rem;
+	color: #513820;
+	cursor: pointer;
+	font-size: 20px;
+    background: #FFFFFF;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action_menu {
+	z-index: 1;
+	position: absolute;
+	padding: 15px 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	border-radius: 15px;
+	top: 30px;
+	right: 15px;
+	display: none;
+}
+
+.action_menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.action_menu ul li {
+	width: 100%;
+	padding: 10px 15px;
+	margin-bottom: 5px;
+}
+
+.action_menu ul li i {
+	padding-right: 10px;
+}
+
+.action_menu ul li:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+/* Css cho chatbox-body */
+
+
+.body-content{
+    position: relative;
+    display: flex;
+    padding: 1rem;
+    width: 105%;
+    height: 105%;
+    grid-gap: 2.3rem;
+    flex-direction: column;
+    border-radius: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.message{
+    display: flex;
+    height: fit-content;
+    position: relative;    
+    margin-right: 1%;
+    width: 100%;
+
+}
+
+.message_user_mess{
+    position: relative;
+    width: 50%;
+    display: flex;
+}
+
+
+
+.message_admin_mess{
+    position: relative;
+    display: flex;
+    width: 50%;
+    left: 50%;
+
+}
+
+
+.message_user_mess .userava{
+    flex-basis: 15%;
+    left: 0;
+    margin-right: 2%;
+}
+
+
+
+.mess-content{
+    padding: 5%;
+    width: fit-content;
+    background: #EEECE9;
+    color: #513820;
+    border-radius: 30px;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.msg_time {
+	position: absolute;
+	bottom: -15px;
+	color: #513820;
+	font-size: 0.5rem;
+    margin-left: -5%;
+}
+
+.msg_time_send {
+	position: absolute;
+	right: 0;
+	bottom: -15px;
+    color: #513820;
+	font-size: 0.5rem;
+
+}
+
+.message_admin_mess .mess-content{
+    background: #513820;
+    color: #F7F7F7;
+}
+
+.message_user_mess .mess-content{
+    border-top-left-radius: 0px;
+ 
+}
+
+/* Css cho chatbox-footer */
+
+
+.input-group-text{
+    display: flex;
+    width: 90%;
+    left: 3%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.input-group-text .search-input{
+    color: #A19487;
+    cursor: text;
+    height: 3rem;
+    position: absolute;
+    width: 95%;
+    left: 0;
+    border-radius: 17px;
+    padding: 0 20% 0 3%;
+
+
+}
+
+ion-icon[name="link-outline"] {
+    position: absolute;
+    font-size: 2rem;
+    right: 14%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+	cursor: pointer;
+
+}
+
+ion-icon[name="mic-circle-outline"] {
+    position: absolute;
+    right: 6%;
+    font-size: 2rem;
+    color: #513820;
+    position: absolute;
+	cursor: pointer;
+
+}
+
+
+.input-group-send{
+
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #513820;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3%;
+    color: #FFFFFF;
+    position: absolute;
+    right:0;
+	cursor: pointer;
+    bottom: 20%;
+
+}
 
 
 /* Css cho Right_maincontent (ORDER) */
