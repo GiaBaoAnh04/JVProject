@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -87,7 +89,7 @@
         <div class="right_container">
             <div class="topbar">
                 <div class="title">
-                    <h2>Tin nhắn</h2>
+                    <h2>Lịch làm việc</h2>
                 </div>
     
                 <div class="notifications_and_user">
@@ -104,6 +106,172 @@
             </div>
             <div class="mainside">
                 <div class="maincontent">
+                    <div class="maincontent_top">
+                        <div class="search">
+                            <input type="text" placeholder="  Tìm kiếm" class="search-input">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </div>
+                        
+                        <button class="btn_addworkshift">Thêm lịch làm việc</button>
+                        
+                    </div>
+                    <div class="maincontent_body">
+                        <div class="maincontent_left">
+                            <div class="wrapper">
+                             <header>
+                               <p class="current-date"></p>
+                               <div class="icons">
+                                 <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                                 <span id="next" class="material-symbols-rounded">chevron_right</span>
+                               </div>
+                             </header>
+                             <div class="calendar">
+                               <ul class="weeks">
+                                 <li>Sun</li>
+                                 <li>Mon</li>
+                                 <li>Tue</li>
+                                 <li>Wed</li>
+                                 <li>Thu</li>
+                                 <li>Fri</li>
+                                 <li>Sat</li>
+                               </ul>
+                               <ul class="days"></ul>
+                             </div>
+                           </div>
+                        </div>
+                        <div class="maincontent_right">
+                            <div class="staffcelander_titile">
+                                <h2>Danh sách lịch làm việc</h2>
+                            </div>
+                            <div class="staffcelander_content">
+                                <div>Ca</div>
+                                <div>Ngày</div>
+                                <div>Mã nhân viên</div>
+                            </div>
+                            <div class="staffcelander_list">
+                                <div class="work_item">
+                                    <div class="shift">2</div>
+                                    <div class="daywork">5/4/2024</div>
+                                    <div class="staffworkshift_inf">
+                                        <img src="staffava.jpg" alt="" class="staffava">
+                                        <div class="staffnumber">NV001</div>
+                                         
+                                    </div>
+                                </div>
+                                <div class="work_item">
+                                    <div class="shift">2</div>
+                                    <div class="daywork">5/4/2024</div>
+                                    <div class="staffworkshift_inf">
+                                        <img src="staffava.jpg" alt="" class="staffava">
+                                        <div class="staffnumber">NV001</div>
+                                         
+                                    </div>
+                                </div>
+                                <div class="work_item">
+                                    <div class="shift">2</div>
+                                    <div class="daywork">5/4/2024</div>
+                                    <div class="staffworkshift_inf">
+                                        <img src="staffava.jpg" alt="" class="staffava">
+                                        <div class="staffnumber">NV001</div>
+                                         
+                                    </div>
+                                </div>
+                                <div class="work_item">
+                                    <div class="shift">2</div>
+                                    <div class="daywork">5/4/2024</div>
+                                    <div class="staffworkshift_inf">
+                                        <img src="staffava.jpg" alt="" class="staffava">
+                                        <div class="staffnumber">NV001</div>
+                                         
+                                    </div>
+                                </div>
+                                <div class="work_item">
+                                    <div class="shift">2</div>
+                                    <div class="daywork">5/4/2024</div>
+                                    <div class="staffworkshift_inf">
+                                        <img src="staffava.jpg" alt="" class="staffava">
+                                        <div class="staffnumber">NV001</div>
+                                         
+                                    </div>
+                                </div>
+                                <div class="work_item">
+                                    <div class="shift">2</div>
+                                    <div class="daywork">5/4/2024</div>
+                                    <div class="staffworkshift_inf">
+                                        <img src="staffava.jpg" alt="" class="staffava">
+                                        <div class="staffnumber">NV001</div>
+                                         
+                                    </div>
+                                </div>
+                                <div class="work_item">
+                                    <div class="shift">2</div>
+                                    <div class="daywork">5/4/2024</div>
+                                    <div class="staffworkshift_inf">
+                                        <img src="staffava.jpg" alt="" class="staffava">
+                                        <div class="staffnumber">NV001</div>
+                                         
+                                    </div>
+                                </div>
+                                <div class="work_item">
+                                    <div class="shift">2</div>
+                                    <div class="daywork">5/4/2024</div>
+                                    <div class="staffworkshift_inf">
+                                        <img src="staffava.jpg" alt="" class="staffava">
+                                        <div class="staffnumber">NV001</div>
+                                         
+                                    </div>
+                                </div>
+                                <div class="work_item">
+                                    <div class="shift">2</div>
+                                    <div class="daywork">5/4/2024</div>
+                                    <div class="staffworkshift_inf">
+                                        <img src="staffava.jpg" alt="" class="staffava">
+                                        <div class="staffnumber">NV001</div>
+                                         
+                                    </div>
+                                </div>
+                                <div class="work_item">
+                                    <div class="shift">2</div>
+                                    <div class="daywork">5/4/2024</div>
+                                    <div class="staffworkshift_inf">
+                                        <img src="staffava.jpg" alt="" class="staffava">
+                                        <div class="staffnumber">NV001</div>
+                                         
+                                    </div>
+                                </div>
+                                <div class="work_item">
+                                    <div class="shift">2</div>
+                                    <div class="daywork">5/4/2024</div>
+                                    <div class="staffworkshift_inf">
+                                        <img src="staffava.jpg" alt="" class="staffava">
+                                        <div class="staffnumber">NV001</div>
+                                         
+                                    </div>
+                                </div>
+                                <div class="work_item">
+                                    <div class="shift">2</div>
+                                    <div class="daywork">5/4/2024</div>
+                                    <div class="staffworkshift_inf">
+                                        <img src="staffava.jpg" alt="" class="staffava">
+                                        <div class="staffnumber">NV001</div>
+                                         
+                                    </div>
+                                </div>
+                                <div class="work_item">
+                                    <div class="shift">2</div>
+                                    <div class="daywork">5/4/2024</div>
+                                    <div class="staffworkshift_inf">
+                                        <img src="staffava.jpg" alt="" class="staffava">
+                                        <div class="staffnumber">NV001</div>
+                                         
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    
+                        
+                    </div> 
                     
                 </div>  
                 <div class="right_maincontent">
